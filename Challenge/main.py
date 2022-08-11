@@ -12,5 +12,3 @@ if __name__ == '__main__':
     stats.less(4)
     stats.between(3,6)
     stats.greater(4)
-
-

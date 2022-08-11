@@ -1,5 +1,5 @@
 import pytest
-from DataCapture import DataCapture
+from Challenge.DataCapture import DataCapture
 
 
 @pytest.fixture
@@ -44,7 +44,7 @@ def test_datacapture_add_incorrect_type(DataCaptureEmptyObject):
 
 def test_datacapture_buildstats(DataCaptureObject):
     DataCaptureObject.build_stats()
-    assert 2 == DataCaptureObject.stats[3][1]
+    assert 2 == DataCaptureObject.data[3]
 
 
 def test_datacapture_less(DataCaptureStatsObject):
